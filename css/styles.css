@@ -11,17 +11,45 @@ https://coolors.co/0a369d-4472ca-5e7ce2-92b4f4-cfdee7
 
 /* Global Styles
 -----------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
 body {
     color: #0A369D;
+    margin: 0;
+    padding: 0;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
-    width: 300px;
+    width: 400px;
 }
 a {
     color: #CFDEE7
 }
 a:hover {
     text-decoration: none;
+}
+h1 {
+    font-size: 90px;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.61);
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: italic;
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 
@@ -41,13 +69,25 @@ header {
 .projects a {
     background: #4472CA;
     text-decoration: none;
-    padding: 2px;
+    padding: 7px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects a:hover {
     background: rgba(2, 24, 75, 60%);
 }
-
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #0A369D;
+    padding: 25px 0;
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+.project-item h3 {
+    margin-top: 0;
+}
 
 
 /* Work Experience
@@ -65,15 +105,15 @@ header {
 -----------------------------*/
 footer {
     background: #0A369D;
-    color: #92B4F4
+    color: #92B4F4;
+    padding: 5px
 }
 footer a {
     background: #4472CA;
     text-decoration: none;
-    padding: 2px;
+    padding: 6px;
     border-radius: 4px;
 }
 footer a:hover {
-    background: rgba(2, 24, 75, 80%);
-
+    background: rgba(2, 24, 75, 60%);
 }
